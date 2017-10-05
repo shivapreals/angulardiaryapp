@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  task='';
+tasklist:string[];
+constructor() {
+  this.tasklist = ['SBI', 'AXIS'];
+  }
+add=function(){
+this.tasklist.push(this.task);
+}
 }
